@@ -1,0 +1,53 @@
+name: Generate AI Activity Visualization
+
+on:
+  schedule:
+    # Runs at 00:00 UTC every day.
+    # Note: GitHub scheduled workflows can sometimes execute with a delay. This is normal.
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate AI Visualization
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: node scripts/generate-ai-activity.js
+
+      - name: Verify SVG Generation
+        run: |
+          if [ ! -f dist/neural-activity.svg ]; then
+            echo "Error: SVG file was not generated."
+            exit 1
+          fi
+
+      - name: Publish to Output Branch
+        run: |
+          # Configure Git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Initialize a fresh Git repository in the dist folder
+          cd dist
+          git init
+          git checkout -b output
+          git add neural-activity.svg
+          git commit -m "Update AI visualization automatically"
+          
+          # Force push to the output branch. 
+          # This keeps the branch strictly to 1 commit, preventing infinite repository growth.
+          git push --force https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git output
