@@ -1,0 +1,402 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" width="100%" height="100%">
+    <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="4" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+        <filter id="glow-strong" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="6" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+    </defs>
+
+    <!-- Base Loss Landscape Curve -->
+    <path d="M 50 80 Q 400 340 850 280" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="4 4" />
+    <circle cx="850" cy="280" r="7" fill="#22C55E" filter="url(#glow-strong)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Text Labels -->
+    <text x="50" y="70" fill="#64748b" font-family="monospace" font-size="10" font-weight="bold">HIGH LOSS (INPUT)</text>
+    <text x="865" y="285" fill="#64748b" font-family="monospace" font-size="10" font-weight="bold">GLOBAL MINIMUM</text>
+    <text x="450" y="335" fill="#64748b" font-family="monospace" font-size="10" opacity="0.6">OPTIMIZATION TRAJECTORY</text>
+    <line x1="150" y1="60" x2="325" y2="80" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <line x1="150" y1="60" x2="325" y2="120" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.19s" begin="1.74s" repeatCount="indefinite" path="M 150 60 L 325 120" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.19s" begin="1.74s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="60" x2="325" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.70s" begin="1.84s" repeatCount="indefinite" path="M 150 60 L 325 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.70s" begin="1.84s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="60" x2="325" y2="200" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <line x1="150" y1="60" x2="325" y2="240" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.19s" begin="1.95s" repeatCount="indefinite" path="M 150 60 L 325 240" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.19s" begin="1.95s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="100" x2="325" y2="80" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.37s" begin="1.19s" repeatCount="indefinite" path="M 150 100 L 325 80" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.37s" begin="1.19s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="100" x2="325" y2="120" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.45s" begin="1.69s" repeatCount="indefinite" path="M 150 100 L 325 120" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.45s" begin="1.69s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="100" x2="325" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.38s" begin="1.79s" repeatCount="indefinite" path="M 150 100 L 325 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.38s" begin="1.79s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="100" x2="325" y2="200" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="2.92s" begin="1.31s" repeatCount="indefinite" path="M 150 100 L 325 200" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.92s" begin="1.31s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="100" x2="325" y2="240" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.08s" begin="0.12s" repeatCount="indefinite" path="M 150 100 L 325 240" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.08s" begin="0.12s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="140" x2="325" y2="80" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.49s" begin="0.48s" repeatCount="indefinite" path="M 150 140 L 325 80" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.49s" begin="0.48s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="140" x2="325" y2="120" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.44s" begin="1.26s" repeatCount="indefinite" path="M 150 140 L 325 120" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.44s" begin="1.26s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="140" x2="325" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.09s" begin="1.98s" repeatCount="indefinite" path="M 150 140 L 325 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.09s" begin="1.98s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="140" x2="325" y2="200" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.11s" begin="2.36s" repeatCount="indefinite" path="M 150 140 L 325 200" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.11s" begin="2.36s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="140" x2="325" y2="240" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.43s" begin="1.46s" repeatCount="indefinite" path="M 150 140 L 325 240" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.43s" begin="1.46s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="180" x2="325" y2="80" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.20s" begin="0.86s" repeatCount="indefinite" path="M 150 180 L 325 80" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.20s" begin="0.86s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="180" x2="325" y2="120" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.68s" begin="1.25s" repeatCount="indefinite" path="M 150 180 L 325 120" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.68s" begin="1.25s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="180" x2="325" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.58s" begin="2.98s" repeatCount="indefinite" path="M 150 180 L 325 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.58s" begin="2.98s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="180" x2="325" y2="200" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <line x1="150" y1="180" x2="325" y2="240" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <line x1="150" y1="220" x2="325" y2="80" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.09s" begin="0.88s" repeatCount="indefinite" path="M 150 220 L 325 80" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.09s" begin="0.88s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="220" x2="325" y2="120" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.56s" begin="2.73s" repeatCount="indefinite" path="M 150 220 L 325 120" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.56s" begin="2.73s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="220" x2="325" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.47s" begin="2.50s" repeatCount="indefinite" path="M 150 220 L 325 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.47s" begin="2.50s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="220" x2="325" y2="200" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <line x1="150" y1="220" x2="325" y2="240" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.35s" begin="2.83s" repeatCount="indefinite" path="M 150 220 L 325 240" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.35s" begin="2.83s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="260" x2="325" y2="80" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.42s" begin="1.96s" repeatCount="indefinite" path="M 150 260 L 325 80" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.42s" begin="1.96s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="260" x2="325" y2="120" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="2.97s" begin="0.77s" repeatCount="indefinite" path="M 150 260 L 325 120" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.97s" begin="0.77s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="260" x2="325" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.19s" begin="2.98s" repeatCount="indefinite" path="M 150 260 L 325 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.19s" begin="2.98s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="260" x2="325" y2="200" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.00s" begin="1.37s" repeatCount="indefinite" path="M 150 260 L 325 200" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.00s" begin="1.37s" repeatCount="indefinite" />
+    </circle>
+    <line x1="150" y1="260" x2="325" y2="240" stroke="#334155" stroke-width="1.5" opacity="0.35" />
+    <circle r="3.5" fill="#6366F1" filter="url(#glow)">
+        <animateMotion dur="3.71s" begin="1.84s" repeatCount="indefinite" path="M 150 260 L 325 240" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.71s" begin="1.84s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="80" x2="500" y2="100" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.45s" begin="0.21s" repeatCount="indefinite" path="M 325 80 L 500 100" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.45s" begin="0.21s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="80" x2="500" y2="140" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.29s" begin="0.82s" repeatCount="indefinite" path="M 325 80 L 500 140" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.29s" begin="0.82s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="80" x2="500" y2="180" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.35s" begin="2.39s" repeatCount="indefinite" path="M 325 80 L 500 180" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.35s" begin="2.39s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="80" x2="500" y2="220" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.82s" begin="1.22s" repeatCount="indefinite" path="M 325 80 L 500 220" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.82s" begin="1.22s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="120" x2="500" y2="100" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.13s" begin="2.64s" repeatCount="indefinite" path="M 325 120 L 500 100" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.13s" begin="2.64s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="120" x2="500" y2="140" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.26s" begin="2.41s" repeatCount="indefinite" path="M 325 120 L 500 140" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.26s" begin="2.41s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="120" x2="500" y2="180" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.75s" begin="0.71s" repeatCount="indefinite" path="M 325 120 L 500 180" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.75s" begin="0.71s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="120" x2="500" y2="220" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.72s" begin="2.62s" repeatCount="indefinite" path="M 325 120 L 500 220" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.72s" begin="2.62s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="160" x2="500" y2="100" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.80s" begin="1.04s" repeatCount="indefinite" path="M 325 160 L 500 100" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.80s" begin="1.04s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="160" x2="500" y2="140" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.57s" begin="2.03s" repeatCount="indefinite" path="M 325 160 L 500 140" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.57s" begin="2.03s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="160" x2="500" y2="180" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.27s" begin="1.93s" repeatCount="indefinite" path="M 325 160 L 500 180" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.27s" begin="1.93s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="160" x2="500" y2="220" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.96s" begin="0.82s" repeatCount="indefinite" path="M 325 160 L 500 220" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.96s" begin="0.82s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="200" x2="500" y2="100" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.61s" begin="1.19s" repeatCount="indefinite" path="M 325 200 L 500 100" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.61s" begin="1.19s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="200" x2="500" y2="140" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.39s" begin="1.78s" repeatCount="indefinite" path="M 325 200 L 500 140" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.39s" begin="1.78s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="200" x2="500" y2="180" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.88s" begin="2.36s" repeatCount="indefinite" path="M 325 200 L 500 180" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.88s" begin="2.36s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="200" x2="500" y2="220" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.07s" begin="0.28s" repeatCount="indefinite" path="M 325 200 L 500 220" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.07s" begin="0.28s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="240" x2="500" y2="100" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.92s" begin="2.79s" repeatCount="indefinite" path="M 325 240 L 500 100" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.92s" begin="2.79s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="240" x2="500" y2="140" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.76s" begin="1.19s" repeatCount="indefinite" path="M 325 240 L 500 140" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.76s" begin="1.19s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="240" x2="500" y2="180" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.08s" begin="2.48s" repeatCount="indefinite" path="M 325 240 L 500 180" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.08s" begin="2.48s" repeatCount="indefinite" />
+    </circle>
+    <line x1="325" y1="240" x2="500" y2="220" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.53s" begin="0.39s" repeatCount="indefinite" path="M 325 240 L 500 220" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.53s" begin="0.39s" repeatCount="indefinite" />
+    </circle>
+    <line x1="500" y1="100" x2="675" y2="120" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.37s" begin="0.70s" repeatCount="indefinite" path="M 500 100 L 675 120" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.37s" begin="0.70s" repeatCount="indefinite" />
+    </circle>
+    <line x1="500" y1="100" x2="675" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.43s" begin="2.27s" repeatCount="indefinite" path="M 500 100 L 675 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.43s" begin="2.27s" repeatCount="indefinite" />
+    </circle>
+    <line x1="500" y1="100" x2="675" y2="200" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.10s" begin="1.75s" repeatCount="indefinite" path="M 500 100 L 675 200" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.10s" begin="1.75s" repeatCount="indefinite" />
+    </circle>
+    <line x1="500" y1="140" x2="675" y2="120" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.67s" begin="2.51s" repeatCount="indefinite" path="M 500 140 L 675 120" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.67s" begin="2.51s" repeatCount="indefinite" />
+    </circle>
+    <line x1="500" y1="140" x2="675" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.98s" begin="1.07s" repeatCount="indefinite" path="M 500 140 L 675 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.98s" begin="1.07s" repeatCount="indefinite" />
+    </circle>
+    <line x1="500" y1="140" x2="675" y2="200" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.53s" begin="1.53s" repeatCount="indefinite" path="M 500 140 L 675 200" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.53s" begin="1.53s" repeatCount="indefinite" />
+    </circle>
+    <line x1="500" y1="180" x2="675" y2="120" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.96s" begin="1.60s" repeatCount="indefinite" path="M 500 180 L 675 120" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.96s" begin="1.60s" repeatCount="indefinite" />
+    </circle>
+    <line x1="500" y1="180" x2="675" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.02s" begin="0.33s" repeatCount="indefinite" path="M 500 180 L 675 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.02s" begin="0.33s" repeatCount="indefinite" />
+    </circle>
+    <line x1="500" y1="180" x2="675" y2="200" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.01s" begin="1.96s" repeatCount="indefinite" path="M 500 180 L 675 200" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.01s" begin="1.96s" repeatCount="indefinite" />
+    </circle>
+    <line x1="500" y1="220" x2="675" y2="120" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.83s" begin="2.84s" repeatCount="indefinite" path="M 500 220 L 675 120" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.83s" begin="2.84s" repeatCount="indefinite" />
+    </circle>
+    <line x1="500" y1="220" x2="675" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.45s" begin="1.42s" repeatCount="indefinite" path="M 500 220 L 675 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.45s" begin="1.42s" repeatCount="indefinite" />
+    </circle>
+    <line x1="500" y1="220" x2="675" y2="200" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.42s" begin="1.75s" repeatCount="indefinite" path="M 500 220 L 675 200" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.42s" begin="1.75s" repeatCount="indefinite" />
+    </circle>
+    <line x1="675" y1="120" x2="850" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.55s" begin="0.03s" repeatCount="indefinite" path="M 675 120 L 850 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.55s" begin="0.03s" repeatCount="indefinite" />
+    </circle>
+    <line x1="675" y1="160" x2="850" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="1.88s" begin="1.02s" repeatCount="indefinite" path="M 675 160 L 850 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="1.88s" begin="1.02s" repeatCount="indefinite" />
+    </circle>
+    <line x1="675" y1="200" x2="850" y2="160" stroke="#334155" stroke-width="1.5" opacity="0.55" />
+    <circle r="3.5" fill="#38BDF8" filter="url(#glow)">
+        <animateMotion dur="2.49s" begin="1.00s" repeatCount="indefinite" path="M 675 200 L 850 160" />
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.49s" begin="1.00s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="60" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="150" cy="60" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.40;0" dur="2.0151362023761346s" begin="1.4042806376206909s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="100" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="150" cy="100" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.40;0" dur="2.628296383061415s" begin="0.6237662701783617s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="140" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="150" cy="140" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.40;0" dur="2.9565262924025237s" begin="1.422533762745632s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="180" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="150" cy="180" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.40;0" dur="2.1755371607057423s" begin="1.4666136765115505s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="220" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="150" cy="220" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.40;0" dur="2.6016007028577657s" begin="0.7944691814855918s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="260" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="150" cy="260" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.40;0" dur="2.7466003003408392s" begin="1.7246372758549935s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="325" cy="80" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="325" cy="80" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.80;0" dur="2.0153750628496105s" begin="1.153544258822162s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="325" cy="120" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="325" cy="120" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.80;0" dur="2.7733310860085605s" begin="1.4137758935426192s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="325" cy="160" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="325" cy="160" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.80;0" dur="2.7239819505944376s" begin="0.8670938940361226s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="325" cy="200" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="325" cy="200" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.80;0" dur="2.484230598603842s" begin="0.8562167813759052s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="325" cy="240" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="325" cy="240" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.80;0" dur="2.8697082739294264s" begin="1.2754173432368945s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="100" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="500" cy="100" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.80;0" dur="2.3659067304288124s" begin="1.402716708721408s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="140" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="500" cy="140" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.80;0" dur="2.1215960909625267s" begin="0.7573644634024488s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="180" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="500" cy="180" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.80;0" dur="2.6924618252463124s" begin="0.7184201574460456s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="220" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="500" cy="220" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.80;0" dur="2.047072637237946s" begin="1.6179810994214003s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="675" cy="120" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="675" cy="120" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.80;0" dur="2.9795332224241746s" begin="0.9672950040875468s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="675" cy="160" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="675" cy="160" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.80;0" dur="2.54222369746559s" begin="0.5151707389672318s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="675" cy="200" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+    <circle cx="675" cy="200" r="5" fill="#6366F1" opacity="0" filter="url(#glow)">
+        <animate attributeName="opacity" values="0;0.80;0" dur="2.8277871724413384s" begin="1.4620507147517716s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="850" cy="160" r="4" fill="#111827" stroke="#334155" stroke-width="2" />
+</svg>
